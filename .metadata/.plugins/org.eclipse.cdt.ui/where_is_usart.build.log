@@ -1,0 +1,21 @@
+19:50:40 **** Incremental Build of configuration Release for project where_is_usart ****
+make -j8 all 
+arm-none-eabi-gcc -o "where_is_usart.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\ITI-3 mon-Minia\ST_CUBE_workspace\where_is_usart\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="where_is_usart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Core/Src/main.o: In function `SystemClock_Config':
+main.c:(.text.SystemClock_Config+0x30): undefined reference to `HAL_RCC_OscConfig'
+main.c:(.text.SystemClock_Config+0x4a): undefined reference to `HAL_RCC_ClockConfig'
+main.c:(.text.SystemClock_Config+0x5c): undefined reference to `HAL_RCCEx_PeriphCLKConfig'
+Core/Src/main.o: In function `main':
+main.c:(.text.startup.main+0x4): undefined reference to `HAL_Init'
+main.c:(.text.startup.main+0x54): undefined reference to `HAL_ADC_Init'
+main.c:(.text.startup.main+0x68): undefined reference to `HAL_ADC_ConfigChannel'
+main.c:(.text.startup.main+0x8e): undefined reference to `HAL_UART_Init'
+main.c:(.text.startup.main+0x9a): undefined reference to `HAL_ADC_GetValue'
+Core/Src/stm32f1xx_it.o: In function `SysTick_Handler':
+stm32f1xx_it.c:(.text.SysTick_Handler+0x0): undefined reference to `HAL_IncTick'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:57: where_is_usart.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+19:50:41 Build Failed. 10 errors, 0 warnings. (took 779ms)
+

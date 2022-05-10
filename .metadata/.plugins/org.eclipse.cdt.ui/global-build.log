@@ -1,0 +1,48 @@
+13:54:50 **** Incremental Build of configuration Debug for project usart_adc_test ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -IC:/Users/mazen/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.3/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/Users/mazen/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.3/Drivers/CMSIS/Include -IC:/Users/mazen/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.3/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/Users/mazen/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.3/Drivers/CMSIS/Device/ST/STM32F1xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "usart_adc_test.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\ITI-3 mon-Minia\ITIGP_IOT_EnergyMeter\ITI_GP_Smart_Meter\usart_adc_test\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usart_adc_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usart_adc_test.elf
+ 
+arm-none-eabi-objdump -h -S  usart_adc_test.elf  > "usart_adc_test.list"
+arm-none-eabi-objcopy  -O binary  usart_adc_test.elf  "usart_adc_test.bin"
+arm-none-eabi-size   usart_adc_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25160	    484	   5012	  30656	   77c0	usart_adc_test.elf
+Finished building: default.size.stdout
+Finished building: usart_adc_test.bin
+ 
+ 
+Finished building: usart_adc_test.list
+ 
+13:55:29 **** Incremental Build of configuration Debug for project usart_adc_test ****
+make -j8 all 
+arm-none-eabi-size   usart_adc_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25160	    484	   5012	  30656	   77c0	usart_adc_test.elf
+Finished building: default.size.stdout
+ 
+13:58:47 **** Incremental Build of configuration Debug for project usart_adc_test ****
+make -j8 all 
+arm-none-eabi-size   usart_adc_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25160	    484	   5012	  30656	   77c0	usart_adc_test.elf
+Finished building: default.size.stdout
+ 
+14:02:03 **** Incremental Build of configuration Debug for project usart_adc_test ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -IC:/Users/mazen/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.3/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/Users/mazen/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.3/Drivers/CMSIS/Include -IC:/Users/mazen/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.3/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/Users/mazen/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.3/Drivers/CMSIS/Device/ST/STM32F1xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "usart_adc_test.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\ITI-3 mon-Minia\ITIGP_IOT_EnergyMeter\ITI_GP_Smart_Meter\usart_adc_test\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usart_adc_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usart_adc_test.elf
+ 
+arm-none-eabi-objdump -h -S  usart_adc_test.elf  > "usart_adc_test.list"
+arm-none-eabi-objcopy  -O binary  usart_adc_test.elf  "usart_adc_test.bin"
+arm-none-eabi-size   usart_adc_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25160	    484	   5012	  30656	   77c0	usart_adc_test.elf
+Finished building: default.size.stdout
+ 
+Finished building: usart_adc_test.bin
+ 
+Finished building: usart_adc_test.list
+ 
